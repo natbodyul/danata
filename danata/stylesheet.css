@@ -264,16 +264,14 @@ header
     text-decoration: none;
     display: inline-block;
     margin: 15px 0 0 20px;
-    padding: 10px;
-    color: #232326;
+    padding: 12px 15px 12px 15px;
+    color: black;
+    background-color: #fdf480;
+    font-size: 22px;
 }
 
 .previous:hover{
-    color: #7688da;
-}
-
-.previous {
-    border-radius: 50%;
+    color: #7a7e7a;
 }
 
 .fig {
@@ -336,6 +334,14 @@ header
     font-weight: 600;
     margin-bottom: 10px;
     /*border-bottom: 2px solid #ced0e1;*/
+}
+
+.zoom:hover img{
+    position: fixed;
+    height: 200px;
+    width: 230px;
+    z-index: 99999999;
+    display: block;
 }
 
 .sideimg {
