@@ -21,7 +21,7 @@
 
     <a href ="index.html"><img class="logo" src="./images/logo.png" alt=""></a>
 
-    <a href="cart.html"><img class="cart" src="images/cart.png" alt=""></a>
+    <a href="cart.html"><img class="cart" src="images/cart.png" alt="" id="cart"></a>
 </header>
 
 <div class="figure">
@@ -35,7 +35,9 @@
     <div class="side-panel">
         <label class="side-button-2" for="side-checkbox"></label>
         <div class="side-title">
-            <img class="sideimg" src="./images/clothing/earshat-pink.png" alt="">
+            <a class="zoom" href="./images/clothing/earshat-pink.png" target="_blank">
+                <img class="sideimg" src="./images/clothing/earshat-pink.png" alt="">
+            </a>
             <p>Hat with ears</p>
             <p><img class="color" src="./images/clothing/color-pink.png" alt="">
                 <img class="color" src="./images/clothing/color-green.png" alt="">
@@ -47,7 +49,9 @@
 
         </div>
         <div class="side-title">
-            <img class="sideimg" src="./images/clothing/ushanka-brown.png" alt="">
+            <a class="zoom" href="./images/clothing/ushanka-brown.png" target="_blank">
+                <img class="sideimg" src="./images/clothing/ushanka-brown.png" alt="">
+            </a>
             <p>Cap with ear flaps</p>
             <p><img class="color" src="./images/clothing/color-black.png" alt="">
                 <img class="color" src="./images/clothing/color-grey.png" alt="">
@@ -58,7 +62,9 @@
             <h4>25,00 €</h4>
         </div>
         <div class="side-title">
-            <img class="sideimg" src="./images/clothing/pompon-green.png" alt="">
+            <a class="zoom" href="./images/clothing/pompon-green.png" target="_blank">
+                <img class="sideimg" src="./images/clothing/pompon-green.png" alt="">
+            </a>
             <p>Hat with pompom</p>
             <p><img class="color" src="./images/clothing/color-orange.png" alt="">
                 <img class="color" src="./images/clothing/color-violet.png" alt="">
@@ -69,18 +75,22 @@
             <h4>15,00 €</h4>
         </div>
         <div class="side-title">
-            <img class="sideimg" src="./images/clothing/beret-brown.png" alt="">
+            <a class="zoom" href="./images/clothing/beret-black.png" target="_blank">
+                <img id="beret" class="sideimg" src="./images/clothing/beret-black.png" alt="">
+            </a>
             <p>Beret</p>
-            <p><img class="color" src="./images/clothing/color-black.png" alt="">
-                <img class="color" src="./images/clothing/color-red.png" alt="">
-                <img class="color" src="./images/clothing/color-blue.png" alt="">
+            <p><img class="color" src="./images/clothing/color-black.png" alt="" onclick="choseColor('black', 'beret')">
+                <img class="color" src="./images/clothing/color-red.png" alt="" onclick="choseColor('red', 'beret')">
+                <img class="color" src="./images/clothing/color-blue.png" alt="" onclick="choseColor('blue', 'beret')">
             </p>
             <h5>OneSize</h5>
-            <a href="cart.html"><img class="carticon" src="./images/cart.png" alt=""></a>
+            <a><img class="carticon" src="./images/cart.png" alt="" onclick="addToCart()"></a>
             <h4>30,00 €</h4>
         </div>
         <div class="side-title">
-            <img class="sideimg" src="./images/clothing/panama-black.png" alt="">
+            <a class="zoom" href="./images/clothing/panama-black.png" target="_blank">
+                <img class="sideimg" src="./images/clothing/panama-black.png" alt="">
+            </a>
             <p>Panama</p>
             <p><img class="color" src="./images/clothing/color-grey.png" alt="">
                 <img class="color" src="./images/clothing/color-yellow.png" alt="">

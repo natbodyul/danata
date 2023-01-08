@@ -338,6 +338,14 @@ header
     /*border-bottom: 2px solid #ced0e1;*/
 }
 
+.zoom:hover img{
+    position: fixed;
+    height: 200px;
+    width: 230px;
+    z-index: 99999999;
+    display: block;
+}
+
 .sideimg {
     height: 90px;
     width: 110px;
@@ -386,4 +394,41 @@ header
 
 .detailed_part-list, img {
     background: none;
+}
+
+
+.container {
+    width: 70%;
+    height: 80%;
+    background-color: #ffffff;
+    border-radius: 20px;
+    position: absolute;
+    left: 15%;
+}
+
+.top {
+    margin: 20px;
+    font-size: 18px;
+    font-family: "Helvetica", sans-serif;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+.order-text p, pre{
+    padding-left: 20px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-family: "Helvetica", sans-serif;
+}
+
+.order-text input {
+    margin-left: 20px;
+}
+
+.order-bottom h3 {
+    margin: 20px;
+    font-size: 18px;
+    font-family: "Helvetica", sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
 }

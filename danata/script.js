@@ -67,7 +67,43 @@ function itemSelected(input) {
 
         //ОЧЕНЬ ВАЖНО УКАЗАТЬ NULL , а не любой другой символ
         imageElement.setAttribute("usemap", "null");
+        localStorage.setItem('clothing', clothing);
         imageElement.setAttribute("src", "images/figure/" + currentGender + "-" + currentSeason + "-" + currentBodyPart + "-" + clothing + ".png");
     }
 }
+
+
+function choseColor(color, id)
+{
+
+    //input contains a colour
+
+    //const currentGender = localStorage.getItem('gender');
+    //const currentSeason = localStorage.getItem('season');
+    //const currentBodyPart = localStorage.getItem('bodyPart');
+    //const currentClothing = localStorage.getItem('clothing');
+    const currentColor = color;
+    const currentClothingId=id;
+
+    //получаем id фигуры
+    var imageElement = window.document.getElementById(currentClothingId);
+
+    //TODO: If добавлять или не добавлять
+
+    imageElement.setAttribute("src", "./images/clothing/" + currentClothingId +"-" + currentColor +".png")
+
+
+    //images/figure/woman-winter-head-hat-beret-blue
+    //images/figure/woman-winter-head-hat-beret-red
+    //images/figure/woman-winter-head-hat-beret-black
+
+}
+
+
+function addToCart()
+{
+    var imageElement = window.document.getElementById("cart");
+    imageElement.setAttribute("src","./images/in-cart1.png");
+}
+
 
