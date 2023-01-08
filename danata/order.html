@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <title>Shopping Cart</title>
+    <title>Order</title>
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
     <link rel="stylesheet" type="text/css" href="cartstyle.css">
     <script src="/script.js"></script>
@@ -27,46 +27,36 @@
     <a href="cart.html"><img class="cart" src="images/in-cart1.png" alt=""></a>
 </header>
 <a href="clothing-list.html" class="previous">&#8592;</a>
-<div class="cart-page">
-    <table>
-        <tr>
-            <th>Clothing</th>
-            <th>Quantity</th>
-            <th>Subtotal</th>
-        </tr>
-        <tr>
-            <td>
-                <div class="cart-info">
-                    <img src="./images/clothing/beret-blue.png" alt="">
-                    <div>
-                        <p>Beret</p>
-                        <img src="./images/clothing/color-blue.png" alt="">
-                        <h5>OneSize</h5>
-                        <h4>Price: 30,00 €</h4>
-                        <a href="">Remove</a>
-                    </div>
-                </div>
 
-            </td>
-            <td><input type="number" value="1"></td>
-            <td>30,00 €</td>
-        </tr>
-    </table>
+<div class="container">
+    <h3 class="top">Order</h3>
+    <div class="order-text">
+        <div class="order-top">
+            <p> Name <input type="text" size="40"> </p>
+            <p> Surname <input type="text" size="40"></p>
+            <p> Adress <input type="text" size="40"></p>
+            <p> City, country <input type="text" size="40"></p>
+            <p> Post code <input type="text" size="10"></p>
+            <hr>
+        </div>
 
-    <div class="total-price">
-        <table>
-            <tr>
-                <td>Total</td>
-                <td>30,00 €</td>
-            </tr>
-        </table>
+        <div class="order-bottom-column">
+            <h3><input type="radio" name="browser" value="ie">Credit or debit card</h3>
+            <p> Card nummer <input type="text" size="20"> </p>
+            <p> Expiry Date <input type="date" size="20"></p>
+            <p> CVV <input type="text" size="3"></p>
+        </div>
+
+        <div class="order-bottom-column">
+            <h3><input type="radio" name="browser" value="ie">PayPal</h3>
+        </div>
     </div>
 
     <div class="button-position">
-        <a href="order.html"><button class="button">Order</button></a>
+        <a href="order.html"><button class="button">Pay</button></a>
     </div>
+
 </div>
 
 </body>
-
 </html>

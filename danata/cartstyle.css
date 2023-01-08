@@ -134,3 +134,43 @@ th:last-child{
 .cart-page td{
     font-size: 18px;
 }
+
+.container {
+    width: 70%;
+    height: 80%;
+    background-color: #ffffff;
+    border-radius: 20px;
+    position: absolute;
+    left: 15%;
+}
+
+.top {
+    margin: 20px;
+    font-size: 18px;
+    font-family: "Helvetica", sans-serif;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+.order-text p {
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+.order-text input {
+    margin-left: 40px;
+}
+
+.order-bottom-column h3 {
+    margin: 20px;
+    font-size: 18px;
+    font-family: "Helvetica", sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.order-bottom-column {
+    float: left;
+    width: 50%;
+
+}

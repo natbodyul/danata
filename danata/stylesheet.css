@@ -338,6 +338,14 @@ header
     /*border-bottom: 2px solid #ced0e1;*/
 }
 
+.zoom:hover img{
+    position: fixed;
+    height: 200px;
+    width: 230px;
+    z-index: 99999999;
+    display: block;
+}
+
 .sideimg {
     height: 90px;
     width: 110px;

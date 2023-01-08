@@ -67,7 +67,27 @@ function itemSelected(input) {
 
         //ОЧЕНЬ ВАЖНО УКАЗАТЬ NULL , а не любой другой символ
         imageElement.setAttribute("usemap", "null");
+        localStorage.setItem('clothing', clothing);
         imageElement.setAttribute("src", "images/figure/" + currentGender + "-" + currentSeason + "-" + currentBodyPart + "-" + clothing + ".png");
     }
 }
 
+function chooseColor(color, id) {
+
+    //const currentGender = localStorage.getItem('gender');
+    //const currentSeason = localStorage.getItem('season');
+    //const currentBodyPart = localStorage.getItem('bodyPart');
+    //const currentClothing = localStorage.getItem('clothing');
+    const currentColor = color;
+    const currenClothingId = id;
+
+
+    var imageElement = window.document.getElementById(currenClothingId);
+
+    imageElement.setAttribute('src', './images/clothing/' + currenClothingId + "-" + currentColor + ".png")
+}
+
+function addToCart(){
+    var imageElement = window.document.getElementById("cart");
+    imageElement.setAttribute("src", './images/in-cart1.png');
+}
