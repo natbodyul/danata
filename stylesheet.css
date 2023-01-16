@@ -330,6 +330,7 @@ header
     height: 35px;
     right: 20px;
     top: 55px;
+    cursor: pointer;
 }
 
 .detailed_part-list {
